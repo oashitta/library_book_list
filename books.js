@@ -40,8 +40,8 @@ function displayBook() {
     bookItem.innerHTML = `<td>${book.title}</td> 
     <td>${book.author}</td> 
     <td>${book.noOfPages}</td> 
-    <td>${book.read ? "Read" : "Not Read yet"}</td> 
-    <td><button onClick="removeBook(${index})"> Delete</button></td>
+    <td>${book.read ? "Read" : "Yet to be Read"}</td> 
+    <td><button onClick="removeBook(${index})"> Delete </button></td>
     <td><button onClick="toggleRead(${index})"> Toggle Read </button></td>`;
     bookList.appendChild(bookItem);
     index++;
