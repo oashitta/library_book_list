@@ -5,14 +5,14 @@ function Book(title, author, noOfPages, read) {
   (this.title = title),
     (this.author = author),
     (this.noOfPages = noOfPages),
-    (this.read = read),
-    (this.info = function () {
-      if (this.read === false) {
-        return `${title} by ${author}, ${noOfPages}, not read yet`;
-      } else {
-        return `${title} by ${author}, ${noOfPages}, read`;
-      }
-    });
+    (this.read = read);
+  // (this.info = function () {
+  //   if (this.read === false) {
+  //     return `${title} by ${author}, ${noOfPages}, not read yet`;
+  //   } else {
+  //     return `${title} by ${author}, ${noOfPages}, read`;
+  //   }
+  // });
 }
 
 Book.prototype.toggleRead = function () {
